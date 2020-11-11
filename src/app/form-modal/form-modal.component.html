@@ -1,0 +1,39 @@
+<div class="modal-header">
+    <h4 class="modal-title">Add {{ingredient.ingr}}</h4>
+</div>
+<div class="modal-body">
+    <form [formGroup]="myForm" (ngSubmit)="submitForm()">
+        <div class="container">
+            <div class="form-group">
+                <label for="username">Quantity:</label>
+                <input type="number" 
+                class="form-control"
+                formControlName="quantity" />
+            </div>
+            <div class="form-group">
+                <label for="password">Unit:</label>
+                <select 
+                type='text'
+                formControlName="unit"
+                class="form-control selectpicker">
+                <option 
+                *ngFor="let unit of units"
+                [value]="unit">
+                {{unit}}
+                </option>
+                </select>
+            </div>
+        </div>
+    </form>
+</div>
+  
+<div class="modal-footer">
+    <button class="btn btn-success"
+        [disabled]="!myForm.valid" (click)="submitForm()">
+        Save
+    </button>
+    <button type="button" class="btn btn-danger" aria-label="Close"
+        (click)="activeModal.dismiss('Cross click')">
+        Cancel
+    </button>
+</div>

@@ -1,0 +1,6 @@
+<div class="container card">
+    <h5>Today: <span class="qty" *ngFor='let unit of ingredient.units; let i=index'><span *ngIf='i > 0'> &#8226; </span>{{day}} {{unit}}</span></h5>
+    <h5>Week: <span class="qty" *ngFor='let unit of ingredient.units; let i=index'><span *ngIf='i > 0'> &#8226; </span>{{week}} {{unit}}</span></h5>
+    <button class="btn btn-info" (click)="openFormModal(ingredient)">Add {{ingredient.ingr}}</button>
+
+</div>

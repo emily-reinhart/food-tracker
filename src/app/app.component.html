@@ -1,1 +1,9 @@
-<h1>Hi</h1>
+<div class="container">
+    <h1>Food Tracker</h1>
+
+    <!-- <app-ingredient *ngIf="ingredients.length > 0" [ingredient]="milk"></app-ingredient> -->
+    <app-ingredient *ngFor="let ingr of ingredients let idx=index" [(ingredient)]="ingredients[idx]"></app-ingredient>
+
+    <button class="btn btn-success">Add Ingredients</button>
+
+</div>

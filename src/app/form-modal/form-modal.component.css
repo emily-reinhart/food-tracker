@@ -1,0 +1,25 @@
+.input-label {
+	margin: 5px;
+}
+input {
+	width: 80%;
+	margin: auto;
+}
+select {
+	width: 80%;
+	margin: auto;
+}
+.modal-header {
+	display: inline;
+	text-align: center;
+}
+.modal-body {
+	text-align: center;
+}
+.modal-footer {
+	text-align: center;
+	justify-content: center;
+}
+.modal-footer button {
+	width: 30%;
+}

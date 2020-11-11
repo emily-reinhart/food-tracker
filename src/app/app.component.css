@@ -1,0 +1,16 @@
+div {
+	text-align: center;
+}
+h1 {
+	margin: 20px auto;
+}
+.card {
+	padding: 20px;
+	margin: 20px auto;
+}
+.btn {
+	margin: 10px auto;
+}
+.qty {
+	font-weight: 400;
+}
